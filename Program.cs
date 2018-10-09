@@ -15,16 +15,16 @@ namespace StudentExercises
             Cohort TwentySix = new Cohort ("twentySix");
             Cohort TwentySeven = new Cohort ("twentySeven");
 
-            Student Kelly = new Student ("Kelly", "Cook", "kellycook301", twentySeven);
-            Student Dougie = new Student ("Dougie", "Fresh", "thaMostIll", twentySix);
-            Student Liam = new Student ("Liam", "Duffy", "liamduffy", twentyFive);
-            Student Leanne = new Student ("Leanne", "Johsnon", "leannesunny", twentySix);
+            Student Kelly = new Student ("Kelly", "Cook", "kellycook301", TwentySeven);
+            Student Dougie = new Student ("Dougie", "Fresh", "thaMostIll", TwentySix);
+            Student Liam = new Student ("Liam", "Duffy", "liamduffy", TwentyFive);
+            Student Leanne = new Student ("Leanne", "Johsnon", "leannesunny", TwentySix);
              
-            Instructor Brenda = new Instructor ("Brenda", "Long", "brendalong", twentySix);
-            Instructor Donnie = new Instructor ("Donnie", "Solo", "donnieSolo", twentyFive);
-            Instructor BestGuy = new Instructor ("Best", "Guy", "bestGuySucks", twentySeven);
+            Instructor Brenda = new Instructor ("Brenda", "Long", "brendalong", TwentySix);
+            Instructor Donnie = new Instructor ("Donnie", "Solo", "donnieSolo", TwentyFive);
+            Instructor BestGuy = new Instructor ("Best", "Guy", "bestGuySucks", TwentySeven);
 
-            Joe.AssignExercise (loops, Rachel);
+            Donnie.AssignExercise (Lists, Kelly);
         }
     }
 }
