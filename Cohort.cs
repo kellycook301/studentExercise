@@ -1,12 +1,15 @@
 using System.Collections.Generic;
 
-namespace Cohort {
+namespace StudentExercises {
 
     public class Cohort {
-        public string CohortName { get; set; }
+        public string Name { get; set; }
         
-        // List of students
-        // List of instructors 
+        public List<Student> Students;
+        public List<Instructor> Instructors;
 
+        public Cohort (string name) {
+            Name = name;
+        }
     }
 }
