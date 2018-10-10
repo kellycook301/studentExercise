@@ -17,6 +17,9 @@ namespace StudentExercises {
             Cohort = cohort;
         }
 
+        // method for assigning an exercise to a student. Will need to know what the hell
+        // exercises and students are so they will be arguments for AssignExercise.
+        // Remember. It is public VOID because nothing is being returned.
         public void AssignExercise (Exercise exercise, Student student) {
             student.Exercises.Add(exercise);
         }

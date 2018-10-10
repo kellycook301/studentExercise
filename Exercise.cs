@@ -7,6 +7,7 @@ namespace StudentExercises {
         public string Language { get; set; }
 
 
+        // exercise constructor
         public Exercise (string name, string language) {
             Name = name;
             Language = language;
