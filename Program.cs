@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StudentExercises
 {
@@ -25,14 +26,41 @@ namespace StudentExercises
             Student Leanne = new Student ("Leanne", "Johsnon", "leannesunny", TwentySix);
             
             // create 3 or more instructors and assign 2 exercises to each student
-            Instructor Brenda = new Instructor ("Brenda", "Long", "brendalong", TwentySix);
             Instructor Donnie = new Instructor ("Donnie", "Solo", "donnieSolo", TwentyFive);
+            Instructor Brenda = new Instructor ("Brenda", "Long", "brendalong", TwentySix);
             Instructor BestGuy = new Instructor ("Best", "Guy", "bestGuySucks", TwentySeven);
+
+            // Create a list of students. Add all of the student instances to it.
+            List<Student> students = new List<Student>();
+            students.Add(Kelly);
+            students.Add(Dougie);
+            students.Add(Liam);
+            students.Add(Leanne);
+
+            // Create a list of exercises. Add all of the exercise instances to it.
+            List<Exercise> exercises = new List<Exercise>();
+            exercises.Add(Lists);
+            exercises.Add(Dictionaries);
+            exercises.Add(DailyJournal);
+            exercises.Add(Sets);
+
+            // Create a list of instructors. Add all of the instructor instances to it.
+            List<Instructor> instructors = new List<Instructor>();
+            instructors.Add(Brenda);
+            instructors.Add(Donnie);
+            instructors.Add(BestGuy);
+
+            // Create a list of cohorts. Add all of the cohort instances to it.
+            List<Cohort> cohorts = new List<Cohort>();
+            cohorts.Add(TwentyFive);
+            cohorts.Add(TwentySix);
+            cohorts.Add(TwentySeven);
 
             // In the Instructor class AssignExercise accepts the argument of Exercise and Student.
             // Here it is read as a sentence.
             // Instructor Donnie is assigning the exercise "Lists" to student Kelly.
             Donnie.AssignExercise(Lists, Kelly);
+            // Console.WriteLine($"{} assigned ${} to ${}");
         }
     }
 }
